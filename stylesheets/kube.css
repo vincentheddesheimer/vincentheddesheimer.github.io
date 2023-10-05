@@ -129,7 +129,7 @@ a {
   color: #D30000; }
 
 a:hover {
-  color: #00d3d3; }
+  color: #158df7; }
 
 h1,
 h2,
@@ -485,7 +485,7 @@ a.is-muted:hover {
 
 a.is-color-black:hover,
 .is-color-black a:hover {
-  color: #00d3d3; }
+  color: #158df7; }
 
 .is-large {
   font-size: 1.3125em;
@@ -775,16 +775,16 @@ a.label {
 
 .label.is-error {
   background-color: rgba(238, 36, 85, 0.07);
-  color: #00d3d3; }
+  color: #158df7; }
   .label.is-error.is-secondary {
     background-color: transparent;
-    color: #00d3d3;
+    color: #158df7;
     border-color: rgba(238, 36, 85, 0.3); }
   .label.is-error.is-tertiary {
     background-color: transparent;
-    color: #00d3d3; }
+    color: #158df7; }
   .label.is-error .close:hover {
-    background-color: #00d3d3; }
+    background-color: #158df7; }
 
 .label.is-focus {
   background-color: rgba(21, 141, 247, 0.07);
@@ -1193,7 +1193,7 @@ form {
   form span.is-error,
   form div.is-error {
     font-size: 0.75em;
-    color: #00d3d3; }
+    color: #158df7; }
   form span.is-warning,
   form div.is-warning {
     font-size: 0.75em;
@@ -1217,7 +1217,7 @@ form {
     top: 1px;
     font-size: 1rem;
     font-weight: bold;
-    color: #00d3d3; }
+    color: #158df7; }
 
 .form-item {
   margin-bottom: 16px; }
@@ -1493,7 +1493,7 @@ fieldset > .form-item:last-child {
   .alert a:hover {
     -moz-transition: all linear 0.2s;
     transition: all linear 0.2s;
-    color: #00d3d3; }
+    color: #158df7; }
   .alert .close {
     position: absolute;
     right: 8px;
@@ -1505,7 +1505,7 @@ fieldset > .form-item:last-child {
 .alert.is-error {
   background: rgba(238, 36, 85, 0.07);
   border-color: rgba(238, 36, 85, 0.3);
-  color: #00d3d3; }
+  color: #158df7; }
   .alert.is-error a:hover {
     color: #111113; }
 
@@ -1862,7 +1862,7 @@ fieldset > .form-item:last-child {
     border-radius: 0; }
 
 .message.is-error {
-  background: #00d3d3;
+  background: #158df7;
   color: #fff;
   border-color: transparent; }
   .message.is-error a:hover {
@@ -2092,7 +2092,7 @@ fieldset > .form-item:last-child {
   .nav-toggle:active {
     color: #111113; }
   .nav-toggle:hover {
-    color: #00d3d3; }
+    color: #158df7; }
 
 .is-container {
   display: flex;
