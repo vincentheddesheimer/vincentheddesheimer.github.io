@@ -485,7 +485,7 @@ a.is-muted:hover {
 
 a.is-color-black:hover,
 .is-color-black a:hover {
-  color: #ee2455; }
+  color: #008B8B; }
 
 .is-large {
   font-size: 1.3125em;
@@ -775,29 +775,29 @@ a.label {
 
 .label.is-error {
   background-color: rgba(238, 36, 85, 0.07);
-  color: #ee2455; }
+  color: #008B8B; }
   .label.is-error.is-secondary {
     background-color: transparent;
-    color: #ee2455;
+    color: #008B8B;
     border-color: rgba(238, 36, 85, 0.3); }
   .label.is-error.is-tertiary {
     background-color: transparent;
-    color: #ee2455; }
+    color: #008B8B; }
   .label.is-error .close:hover {
-    background-color: #ee2455; }
+    background-color: #008B8B; }
 
 .label.is-focus {
   background-color: rgba(21, 141, 247, 0.07);
-  color: #158df7; }
+  color: #8B0000; }
   .label.is-focus.is-secondary {
     background-color: transparent;
-    color: #158df7;
+    color: #8B0000;
     border-color: rgba(21, 141, 247, 0.3); }
   .label.is-focus.is-tertiary {
     background-color: transparent;
-    color: #158df7; }
+    color: #8B0000; }
   .label.is-focus .close:hover {
-    background-color: #158df7; }
+    background-color: #8B0000; }
 
 .label.is-success {
   background-color: rgba(32, 188, 113, 0.07);
@@ -1193,7 +1193,7 @@ form {
   form span.is-error,
   form div.is-error {
     font-size: 0.75em;
-    color: #ee2455; }
+    color: #008B8B; }
   form span.is-warning,
   form div.is-warning {
     font-size: 0.75em;
@@ -1217,7 +1217,7 @@ form {
     top: 1px;
     font-size: 1rem;
     font-weight: bold;
-    color: #ee2455; }
+    color: #008B8B; }
 
 .form-item {
   margin-bottom: 16px; }
@@ -1289,7 +1289,7 @@ fieldset > .form-item:last-child {
   .is-append a,
   .is-prepend a {
     font-size: 0.875em;
-    color: #158df7;
+    color: #8B0000;
     text-decoration: none; }
     .is-append a:hover,
     .is-prepend a:hover {
@@ -1351,7 +1351,7 @@ fieldset > .form-item:last-child {
   .breadcrumb a:hover {
     -moz-transition: all linear 0.2s;
     transition: all linear 0.2s;
-    color: #158df7;
+    color: #8B0000;
     text-decoration: underline; }
   .breadcrumb span:after,
   .breadcrumb a:after {
@@ -1434,7 +1434,7 @@ fieldset > .form-item:last-child {
   .pager.is-stacked a:hover {
     background: none;
     text-decoration: underline;
-    color: #158df7; }
+    color: #8B0000; }
   .pager.is-stacked a.is-prev:before,
   .pager.is-stacked a.is-next:after {
     content: '';
@@ -1493,7 +1493,7 @@ fieldset > .form-item:last-child {
   .alert a:hover {
     -moz-transition: all linear 0.2s;
     transition: all linear 0.2s;
-    color: #ee2455; }
+    color: #008B8B; }
   .alert .close {
     position: absolute;
     right: 8px;
@@ -1505,7 +1505,7 @@ fieldset > .form-item:last-child {
 .alert.is-error {
   background: rgba(238, 36, 85, 0.07);
   border-color: rgba(238, 36, 85, 0.3);
-  color: #ee2455; }
+  color: #008B8B; }
   .alert.is-error a:hover {
     color: #111113; }
 
@@ -1519,7 +1519,7 @@ fieldset > .form-item:last-child {
 .alert.is-focus {
   background: rgba(21, 141, 247, 0.07);
   border-color: rgba(21, 141, 247, 0.3);
-  color: #158df7; }
+  color: #8B0000; }
   .alert.is-focus a:hover {
     color: #111113; }
 
@@ -1862,7 +1862,7 @@ fieldset > .form-item:last-child {
     border-radius: 0; }
 
 .message.is-error {
-  background: #ee2455;
+  background: #008B8B;
   color: #fff;
   border-color: transparent; }
   .message.is-error a:hover {
@@ -1876,7 +1876,7 @@ fieldset > .form-item:last-child {
     color: rgba(255, 255, 255, 0.7); }
 
 .message.is-focus {
-  background: #158df7;
+  background: #8B0000;
   color: rgba(255, 255, 255, 0.95);
   border-color: transparent; }
   .message.is-focus a:hover {
@@ -1908,10 +1908,10 @@ fieldset > .form-item:last-child {
   .tabs a:hover {
     -moz-transition: all linear 0.2s;
     transition: all linear 0.2s;
-    color: #158df7;
+    color: #8B0000;
     background: none;
     text-decoration: none;
-    border-bottom: 2px solid #158df7; }
+    border-bottom: 2px solid #8B0000; }
   .tabs a.is-active {
     cursor: default;
     color: #111113;
@@ -2049,7 +2049,7 @@ fieldset > .form-item:last-child {
     min-height: 8px;
     width: 100%;
     height: 100%;
-    background-color: #158df7;
+    background-color: #8B0000;
     background-size: 40px 40px; }
 
 .is-offcanvasTransition {
@@ -2092,7 +2092,7 @@ fieldset > .form-item:last-child {
   .nav-toggle:active {
     color: #111113; }
   .nav-toggle:hover {
-    color: #ee2455; }
+    color: #008B8B; }
 
 .is-container {
   display: flex;
