@@ -232,6 +232,21 @@ section p:last-child {
   margin-bottom: 0;
 }
 
+.media-links {
+  font-size: 0.9em;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  color: #767676;
+}
+
+.media-links a {
+  font-weight: 600;
+}
+
+.media-links a:hover {
+  text-decoration: underline;
+}
+
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {
