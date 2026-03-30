@@ -3,8 +3,8 @@
    ============================================ */
 
 :root {
-  --color-accent: #9B1B30;
-  --color-accent-hover: #B22842;
+  --color-accent: #A81E2B;
+  --color-accent-hover: #C0392B;
   --color-text: #1a1a1a;
   --color-text-secondary: #555;
   --color-heading: #111;
@@ -50,8 +50,8 @@ body {
 }
 
 .profile-photo {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   border-radius: 12px;
   object-fit: cover;
   display: block;
