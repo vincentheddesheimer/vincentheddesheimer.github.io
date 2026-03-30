@@ -12,7 +12,7 @@
   --color-surface: #ffffff;
   --color-border: #e5e5e5;
   --sidebar-width: 240px;
-  --max-width: 1120px;
+  --max-width: 1280px;
   --gap: 64px;
 }
 
@@ -39,7 +39,7 @@ body {
   gap: var(--gap);
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 60px 40px;
+  padding: 60px 24px;
 }
 
 /* Sidebar */
