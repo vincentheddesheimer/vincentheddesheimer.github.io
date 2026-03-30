@@ -1,77 +1,61 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
-
-	<script type="text/javascript">
-		function toggle_visibility(id) {
-			event.preventDefault();
-			var e = document.getElementById(id);
-			if (e.style.display == 'none')
-				e.style.display = 'block';
-			else
-				e.style.display = 'none';
-		}
-
-	</script>
-
-
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<title>Vincent Heddesheimer</title>
+	<meta name="description" content="Vincent Heddesheimer — Postdoctoral Research Associate at Princeton University. Research on political economy, inequality, and housing.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="stylesheets/styles.css">
-	<link rel="stylesheet" href="stylesheets/pygment_trac.css">
-	<link rel="stylesheet" href="stylesheets/shiro.css">
-	<link rel="stylesheet" href="stylesheets/kube.css">
-	<script src="https://kit.fontawesome.com/9745af1226.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+	<script src="https://kit.fontawesome.com/9745af1226.js" crossorigin="anonymous"></script>
+	<script src="javascripts/main.js" defer></script>
 </head>
 
 <body>
-	<div class="wrapper">
-		<header>
-			<h1>Vincent Heddesheimer</h1>
-			<img src="img/vincentheddesheimer.jpg">
-
-			<p></p>
-			<p class="view">Ph.D. Candidate<br><a href="https://politics.princeton.edu/" target="_blank">Department of
-					Politics</a><br>
-				Princeton University<br><a
-					href="mailto:vincent.heddesheimer@princeton.edu">vincent.heddesheimer@princeton.edu</a></p>
-			<p></p>
-
-			<p>
-				<a href="cv/VHeddesheimer_CV.pdf"><b>Curriculum Vitae</b></a><br>
-				<a href="https://scholar.google.com/citations?user=6NP7hJ8AAAAJ&hl"><b>Google Scholar</b></a><br>
-				<a href="https://github.com/vincentheddesheimer"><b>GitHub</b></a><br>
+	<div class="site-wrapper">
+		<aside class="sidebar">
+			<img src="img/vincentheddesheimer.jpg" alt="Portrait of Vincent Heddesheimer" class="profile-photo" width="160" height="160">
+			<h1 class="site-name">Vincent Heddesheimer</h1>
+			<p class="site-title">Postdoctoral Research Associate<br>
+				<a href="https://politics.princeton.edu/" target="_blank" rel="noopener">Department of Politics</a><br>
+				Princeton University
 			</p>
 
-		</header>
+			<nav class="sidebar-links" aria-label="Contact and profiles">
+				<a href="cv/VHeddesheimer_CV.pdf" aria-label="Curriculum Vitae">
+					<i class="fa-solid fa-file-pdf"></i>
+					<span class="link-label">CV</span>
+				</a>
+				<a href="https://scholar.google.com/citations?user=6NP7hJ8AAAAJ&hl" target="_blank" rel="noopener" aria-label="Google Scholar">
+					<i class="fa-brands fa-google-scholar"></i>
+					<span class="link-label">Scholar</span>
+				</a>
+				<a href="https://github.com/vincentheddesheimer" target="_blank" rel="noopener" aria-label="GitHub">
+					<i class="fa-brands fa-github"></i>
+					<span class="link-label">GitHub</span>
+				</a>
+				<a href="mailto:vincent.heddesheimer@princeton.edu" aria-label="Email">
+					<i class="fa-solid fa-envelope"></i>
+					<span class="link-label">Email</span>
+				</a>
+			</nav>
+		</aside>
 
+		<main class="content">
 
-
-
-		<section>
-			<h3>
-				<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span
-						class="octicon octicon-link"></span></a>
-			</h3>
-
-
-			<p>I am a Ph.D. candidate at the Department of Politics at <a href="https://politics.princeton.edu/"
-					target="_blank">Princeton University</a>. I study political economy with a
+			<p>I am a Postdoctoral Research Associate at the Department of Politics at <a href="https://politics.princeton.edu/" target="_blank" rel="noopener">Princeton University</a>. I study political economy with a
 				focus on the political causes and consequences of economic inequality and insecurity.</p>
 
-
-			<div align="left">
-				<h3>Dissertation Project</h3>
-			</div>
+			<h2>Dissertation Project</h2>
 			<p><b>Electoral Risk and the Time-Horizons Problem in Housing</b>
-				<i><a href="#" onclick="toggle_visibility('housing');">[Description]</a></i>
+				<button class="toggle-btn" data-target="housing" aria-expanded="false">[Description]</button>
 			</p>
-			<div id="housing" style="display:none;">
+			<div id="housing" class="abstract" hidden>
 				<p>Why do local politicians fail to expand housing supply even when shortages are severe?
 					My dissertation argues that housing policy is a time-horizons problem: expanding supply
 					imposes concentrated short-run political costs—neighborhood disruption, organized opposition,
@@ -86,21 +70,18 @@
 					undersupply, shifting attention from resident opposition to elite decision-making.</p>
 			</div>
 
-			<div align="left">
-				<h3>Publications</h3>
-			</div>
+			<h2>Publications</h2>
 			<ol reversed>
 
 				<li>
-					<b><a href="https://doi.org/10.1017/S0003055425101226" target="_blank">The Green Transition and
-							Political
+					<b><a href="https://doi.org/10.1017/S0003055425101226" target="_blank" rel="noopener">The Green Transition and Political
 							Polarization
 							Along Occupational Lines</a></b>
-					(with Hanno Hilbig and Erik Voeten). First View, <i><b>American Political Science
+					(with <a class="coauthor" href="https://www.hannohilbig.com/" target="_blank" rel="noopener">Hanno Hilbig</a> and <a class="coauthor" href="https://erikvoeten.georgetown.domains/" target="_blank" rel="noopener">Erik Voeten</a>). First View, <i><b>American Political Science
 							Review</b></i>.
 
-					<i><a href="#" onclick="toggle_visibility('energytransition');">[Abstract]</a></i>
-					<div id="energytransition" style="display:none;">
+					<button class="toggle-btn" data-target="energytransition" aria-expanded="false">[Abstract]</button>
+					<div id="energytransition" class="abstract" hidden>
 						<p>Green transition policies set long-term
 							targets to reduce carbon emissions and other pollutants, posing a threat to workers in
 							polluting
@@ -124,14 +105,14 @@
 				</li>
 
 				<li>
-					<b><a href="https://osf.io/preprints/socarxiv/yq27d_v3" target="_blank">Climate Exposure Drives Firm
+					<b><a href="https://osf.io/preprints/socarxiv/yq27d_v3" target="_blank" rel="noopener">Climate Exposure Drives Firm
 							Political
 							Behavior: Evidence from Earnings Calls and Lobbying Data</a></b>
-					(with Christian Baehr and Fiona Bare). Forthcoming, <b><i> American Journal of Political
+					(with <a class="coauthor" href="https://christianbaehr.com/" target="_blank" rel="noopener">Christian Baehr</a> and <a class="coauthor" href="https://fionabare.com/" target="_blank" rel="noopener">Fiona Bare</a>). Forthcoming, <b><i>American Journal of Political
 							Science</i></b>.
 
-					<i><a href="#" onclick="toggle_visibility('climateexposure');">[Abstract]</a></i>
-					<div id="climateexposure" style="display:none;">
+					<button class="toggle-btn" data-target="climateexposure" aria-expanded="false">[Abstract]</button>
+					<div id="climateexposure" class="abstract" hidden>
 						<p>When and how do firms engage in climate
 							politics? We argue that regulatory concerns, business opportunities, and physical risks
 							activate
@@ -155,19 +136,19 @@
 				</li>
 
 				<li>
-					<b><a href="https://www.nature.com/articles/s41597-025-04811-5" target="_blank">GERDA: German
+					<b><a href="https://www.nature.com/articles/s41597-025-04811-5" target="_blank" rel="noopener">GERDA: German
 							Election
 							Database</a></b>
-					(with Hanno Hilbig, Florian Sichart, and Andreas Wiedemann). 2025. <b><i> Nature: Scientific
+					(with <a class="coauthor" href="https://www.hannohilbig.com/" target="_blank" rel="noopener">Hanno Hilbig</a>, <a class="coauthor" href="https://www.floriansichart.com/" target="_blank" rel="noopener">Florian Sichart</a>, and <a class="coauthor" href="https://www.abwiedemann.com/" target="_blank" rel="noopener">Andreas Wiedemann</a>). 2025. <b><i>Nature: Scientific
 							Data</i></b>, 12: 618.
-					<i><a href="#" onclick="toggle_visibility('gerdapaper');">[Abstract]</a></i>
-					<i><a href="http://www.german-elections.com/" target="_blank">[Website]</a></i>
-					<i><a href="https://github.com/awiedem/german_election_data" target="_blank">[Data]</a></i>
-					<i><a href="https://cran.r-project.org/web/packages/gerda/vignettes/gerda.html" target="_blank">[R
+					<button class="toggle-btn" data-target="gerdapaper" aria-expanded="false">[Abstract]</button>
+					<i><a href="http://www.german-elections.com/" target="_blank" rel="noopener">[Website]</a></i>
+					<i><a href="https://github.com/awiedem/german_election_data" target="_blank" rel="noopener">[Data]</a></i>
+					<i><a href="https://cran.r-project.org/web/packages/gerda/vignettes/gerda.html" target="_blank" rel="noopener">[R
 							Package]</a></i>
-					<i><a href="https://osf.io/preprints/socarxiv/q28ex" target="_blank">[Preprint]</a></i>
+					<i><a href="https://osf.io/preprints/socarxiv/q28ex" target="_blank" rel="noopener">[Preprint]</a></i>
 
-					<div id="gerdapaper" style="display:none;">
+					<div id="gerdapaper" class="abstract" hidden>
 						<p>Elections are the key mechanism through which voters hold elected officials accountable. The
 							partisan composition of local, state, and federal governments, in turn, shapes policy
 							choices
@@ -192,51 +173,49 @@
 
 			</ol>
 
-			<div align="left">
-				<h3>Working Papers </h3>
-			</div>
+			<h2>Working Papers</h2>
 			<ol start="1">
 
 				<li>
-					<b><a href="https://osf.io/preprints/socarxiv/6h8cq" target="_blank">Place-Based Policies, Local
+					<b><a href="https://osf.io/preprints/socarxiv/6h8cq" target="_blank" rel="noopener">Place-Based Policies, Local
 							Responses, and
 							Electoral Behavior</a></b>
-					(with Hanno Hilbig and Andreas Wiedemann).
+					(with <a class="coauthor" href="https://www.hannohilbig.com/" target="_blank" rel="noopener">Hanno Hilbig</a> and <a class="coauthor" href="https://www.abwiedemann.com/" target="_blank" rel="noopener">Andreas Wiedemann</a>).
 
-					<i><a href="#" onclick="toggle_visibility('grw');">[Abstract]</a></i>
-					<div id="grw" style="display:none;">
+					<button class="toggle-btn" data-target="grw" aria-expanded="false">[Abstract]</button>
+					<div id="grw" class="abstract" hidden>
 						<p>Many governments use place-based policies to support economically lagging regions, yet these programs are vulnerable to retrenchment. This paper examines how local governments respond to reductions in national place-based investment subsidies and how these reactions shape electoral outcomes. Focusing on exogenous variation in the magnitude of cuts to Germany's largest regional investment program in 2014, we find that municipalities facing subsidy losses engage in debt-financed compensatory investment, particularly in manufacturing strongholds. Using fine-grained administrative data and difference-in-differences designs, we show that the net electoral effect of greater subsidy cuts is reduced far-right voting and increased support for incumbents in both local and federal elections. We argue that local countermeasures serve as visible signals of political responsiveness, favoring the local incumbent and potentially outweighing electoral backlash to the subsidy cut itself. These findings highlight the pivotal role of local fiscal responses in mediating the political impact of place-based policy retrenchment.</p>
 					</div>
 				</li>
 
 				<li>
-					<b><a href="https://osf.io/preprints/socarxiv/s26vm_v2" target="_blank">Housing Populism Under Financialized Capitalism</a></b>
-					(with Rafaela Dancygier and Andreas Wiedemann).
+					<b><a href="https://osf.io/preprints/socarxiv/s26vm_v2" target="_blank" rel="noopener">Housing Populism Under Financialized Capitalism</a></b>
+					(with <a class="coauthor" href="https://rdancygi.scholar.princeton.edu/" target="_blank" rel="noopener">Rafaela Dancygier</a> and <a class="coauthor" href="https://www.abwiedemann.com/" target="_blank" rel="noopener">Andreas Wiedemann</a>).
 
-					<i><a href="#" onclick="toggle_visibility('financialization');">[Abstract]</a></i>
-					<div id="financialization" style="display:none;">
-						<p>This paper examines the rise of housing populism---narratives that cast financial investors
+					<button class="toggle-btn" data-target="financialization" aria-expanded="false">[Abstract]</button>
+					<div id="financialization" class="abstract" hidden>
+						<p>This paper examines the rise of housing populism—narratives that cast financial investors
 							as predatory, demand investor bans, and frame housing as a fundamental social right
 							requiring state protection. We argue that politicians embrace housing populism less because
 							it reflects economic realities than because it resonates with public moral commitments:
 							distrust of finance capitalism and support for housing as a collective entitlement. Using
-							U.S. property-level transaction data (2012-2021), a difference-in-differences analysis finds
+							U.S. property-level transaction data (2012–2021), a difference-in-differences analysis finds
 							no consistent evidence that investor activity increases housing costs. Yet original surveys
 							reveal widespread, bipartisan beliefs that investors undermine the right to housing and that
 							government should safeguard access. A candidate-choice experiment further shows that
 							candidates advocating investor bans framed in rights-based or anti-elite terms substantially
 							outperform those prioritizing home-building through pragmatic or market-oriented appeals.
-							Housing populism channels social-rights claims into symbolic confrontations between ``the
-							people’’ and financial elites, often displacing more effective policy responses.</p>
+							Housing populism channels social-rights claims into symbolic confrontations between "the
+							people" and financial elites, often displacing more effective policy responses.</p>
 					</div>
 				</li>
 
 				<li>
 					<b>Rent Control Turns Tenants into Market Liberals</b>
-					(with Anselm Hager). (draft available upon request)
+					(with <a class="coauthor" href="https://anselmhager.com/" target="_blank" rel="noopener">Anselm Hager</a>). (draft available upon request)
 
-					<i><a href="#" onclick="toggle_visibility('rentcontrol');">[Abstract]</a></i>
-					<div id="rentcontrol" style="display:none;">
+					<button class="toggle-btn" data-target="rentcontrol" aria-expanded="false">[Abstract]</button>
+					<div id="rentcontrol" class="abstract" hidden>
 						<p>High rents have become a major political battleground in Western cities, prompting
 							politicians to implement rent control. While rent control provides immediate relief, it
 							lowers long-term housing supply. How do voters deal with this trade-off? We argue that rent
@@ -253,10 +232,10 @@
 
 				<li>
 					<b>Long-run Political Change after the Great Recession</b>
-					(with Hanno Hilbig). (draft available upon request)
+					(with <a class="coauthor" href="https://www.hannohilbig.com/" target="_blank" rel="noopener">Hanno Hilbig</a>). (draft available upon request)
 
-					<i><a href="#" onclick="toggle_visibility('recession');">[Abstract]</a></i>
-					<div id="recession" style="display:none;">
+					<button class="toggle-btn" data-target="recession" aria-expanded="false">[Abstract]</button>
+					<div id="recession" class="abstract" hidden>
 						<p>What are the long-term political consequences of
 							economic crises? We assess the enduring impact of the Great Recession on U.S. political
 							outcomes. We employ a difference-in-differences approach, leveraging geographic variation in
@@ -283,10 +262,10 @@
 
 				<li>
 					<b>The Polarization of the Immigration Debate: Evidence from 9 National Parliaments</b>
-					(with Ran Abramitzky, Leah Boustan, Rafaela Dancygier, and Ahra Wu). (draft available upon request)
+					(with <a class="coauthor" href="https://ranabr.people.stanford.edu/" target="_blank" rel="noopener">Ran Abramitzky</a>, <a class="coauthor" href="https://economics.yale.edu/people/leah-boustan" target="_blank" rel="noopener">Leah Boustan</a>, <a class="coauthor" href="https://rdancygi.scholar.princeton.edu/" target="_blank" rel="noopener">Rafaela Dancygier</a>, and <a class="coauthor" href="https://bobst.princeton.edu/people/ahra-wu" target="_blank" rel="noopener">Ahra Wu</a>). (draft available upon request)
 
-					<i><a href="#" onclick="toggle_visibility('immigration_speeches');">[Abstract]</a></i>
-					<div id="immigration_speeches" style="display:none;">
+					<button class="toggle-btn" data-target="immigration_speeches" aria-expanded="false">[Abstract]</button>
+					<div id="immigration_speeches" class="abstract" hidden>
 						<p>We analyze parliamentary speeches about immigration from 9 countries using large language
 							models. Contrary to common perception, US immigration politics are not as negative as
 							Trump's rhetoric suggests: Democrats are the most positive party on immigration in our
@@ -296,63 +275,32 @@
 							mainstream parties maintained a positive consensus on immigration through 2014 and only
 							began polarizing after the refugee crisis. This pattern suggests mainstream parties
 							stayed positive longer than public attitudes warranted, creating
-							space for far-right growth.
-						</p>
+							space for far-right growth.</p>
 					</div>
 				</li>
 
-				<!-- <li>
-					<b><a href="https://osf.io/x23bj_v2" target="_blank">Economic Insecurity Increases
-							Affective
-							Polarization and Outgroup-Aversion </a></b>
-					(with Joanna Bryson).
-
-					<i><a href="#" onclick="toggle_visibility('polarization');">[Abstract]</a></i>
-					<div id="polarization" style="display:none;">
-						<p>Affective polarization - a deep emotional divide
-							between opposing social and political groups - has become a pressing global governance
-							challenge, disrupting both democratic processes and policy uptake. While some degree of
-							position
-							polarization should be expected in a healthy, multi-party political system, the factors
-							driving
-							recent extremes in divisions remain unclear. One candidate factor, economic instability, has
-							been frequently linked to rising polarization, but causal evidence to date has been limited.
-							Using panel survey data from the Netherlands and a difference-in-differences design, we show
-							that economic insecurity significantly increases affective polarization. The effect persists
-							for
-							years, with a longer (though slower) expression among men. It is also accompanied by
-							increased
-							distrust and social group clustering. Our findings suggest that economic insecurity is a key
-							driver of polarization, highlighting the role of labor market stability in shaping political
-							and
-							social cohesion.</p>
-					</div>
-				</li> -->
 			</ol>
 
-			<div align="left">
-				<h3>Datasets</h3>
-			</div>
-			<ul>
+			<h2>Datasets</h2>
+			<ul class="datasets">
 				<li>
-					<b><a href="http://www.german-elections.com/" target="_blank">GERDA - the German Election
+					<b><a href="http://www.german-elections.com/" target="_blank" rel="noopener">GERDA — the German Election
 							Database</a></b>
-					(with Hanno Hilbig, Florian Sichart, and Andreas Wiedemann) is a comprehensive panel dataset of
+					(with <a class="coauthor" href="https://www.hannohilbig.com/" target="_blank" rel="noopener">Hanno Hilbig</a>, <a class="coauthor" href="https://www.floriansichart.com/" target="_blank" rel="noopener">Florian Sichart</a>, and <a class="coauthor" href="https://www.abwiedemann.com/" target="_blank" rel="noopener">Andreas Wiedemann</a>) is a comprehensive panel dataset of
 					local, state, and federal election results in Germany at the municipality level spanning the past
 					three decades. It includes turnout and vote shares for all major parties, with consistent municipal
 					boundaries and harmonized data across different levels of government.
-					<i><a href="https://github.com/awiedem/german_election_data" target="_blank">[Data]</a></i>
-					<i><a href="https://cran.r-project.org/web/packages/gerda/vignettes/gerda.html" target="_blank">[R
+					<i><a href="https://github.com/awiedem/german_election_data" target="_blank" rel="noopener">[Data]</a></i>
+					<i><a href="https://cran.r-project.org/web/packages/gerda/vignettes/gerda.html" target="_blank" rel="noopener">[R
 							Package]</a></i>
-					<i><a href="https://www.nature.com/articles/s41597-025-04811-5" target="_blank">[Paper]</a></i>
+					<i><a href="https://www.nature.com/articles/s41597-025-04811-5" target="_blank" rel="noopener">[Paper]</a></i>
 					<br>
-					&bull; <span class="media-links">[Media: <a href="https://www.spiegel.de/politik/deutschland/landtagswahl-baden-wuerttemberg-2026-alle-ergebnisse-aus-gemeinden-und-wahlkreisen-a-cfb463f5-3a24-4aff-8367-3c227ab60a64" target="_blank">Der Spiegel</a>]</span>
+					&bull; <span class="media-links">[Media: <a href="https://www.spiegel.de/politik/deutschland/landtagswahl-baden-wuerttemberg-2026-alle-ergebnisse-aus-gemeinden-und-wahlkreisen-a-cfb463f5-3a24-4aff-8367-3c227ab60a64" target="_blank" rel="noopener">Der Spiegel</a>]</span>
 				</li>
 			</ul>
 
-		</section>
-
-
+		</main>
+	</div>
 </body>
 
 </html>
