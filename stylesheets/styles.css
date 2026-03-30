@@ -11,9 +11,9 @@
   --color-bg: #f7f7f7;
   --color-surface: #ffffff;
   --color-border: #e5e5e5;
-  --sidebar-width: 220px;
-  --max-width: 920px;
-  --gap: 60px;
+  --sidebar-width: 240px;
+  --max-width: 1120px;
+  --gap: 64px;
 }
 
 /* Reset */
