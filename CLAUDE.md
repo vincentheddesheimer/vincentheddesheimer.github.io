@@ -3,6 +3,8 @@
 ## Overview
 Static personal academic website hosted on GitHub Pages at `vheddesheimer.github.io`. Built with plain HTML/CSS (no build step, no framework).
 
+> Website repo — the research-root `../CLAUDE.md` R / stats conventions do not apply here.
+
 ## Structure
 - `index.html` — Single-page site with bio, publications, working papers, and datasets
 - `stylesheets/` — CSS files (styles.css, kube.css, pygment_trac.css)
