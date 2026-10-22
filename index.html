@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-
-
 <head>
 	<meta charset="utf-8">
 	<title>Vincent Heddesheimer</title>
@@ -16,58 +14,49 @@
 
 	<link rel="icon" href="favicon.svg" type="image/svg+xml">
 	<link rel="stylesheet" href="stylesheets/styles.css">
-	<script src="https://kit.fontawesome.com/9745af1226.js" crossorigin="anonymous"></script>
 	<script src="javascripts/main.js" defer></script>
+	<noscript><style>.abstract[hidden] { display: block !important; } .toggle-btn { display: none; }</style></noscript>
 </head>
 
 <body>
+	<a class="skip-link" href="#main-content">Skip to content</a>
 	<div class="site-wrapper">
 		<aside class="sidebar">
-			<img src="img/vincentheddesheimer.jpg" alt="Portrait of Vincent Heddesheimer" class="profile-photo"
-				width="220">
+			<div class="profile-photo-frame">
+				<img src="img/vincentheddesheimer-2026.jpg" alt="Portrait of Vincent Heddesheimer" class="profile-photo"
+					width="248" height="248" fetchpriority="high">
+			</div>
+			<div class="sidebar-identity">
 			<h1 class="site-name">Vincent Heddesheimer</h1>
 			<p class="site-title">Ph.D. Candidate<br>
 				<a href="https://politics.princeton.edu/" target="_blank" rel="noopener">Department of Politics</a><br>
 				Princeton University
 			</p>
 
+			</div>
+
 			<nav class="sidebar-links" aria-label="Contact and profiles">
 				<a href="cv/VHeddesheimer_CV.pdf" aria-label="Curriculum Vitae">
-					<i class="fas fa-file-alt"></i>
 					<span class="link-label">CV</span>
 				</a>
 				<a href="https://scholar.google.com/citations?user=6NP7hJ8AAAAJ&hl" target="_blank" rel="noopener"
 					aria-label="Google Scholar">
-					<i class="fas fa-graduation-cap"></i>
 					<span class="link-label">Scholar</span>
 				</a>
 				<a href="https://github.com/vincentheddesheimer" target="_blank" rel="noopener" aria-label="GitHub">
-					<i class="fab fa-github"></i>
 					<span class="link-label">GitHub</span>
 				</a>
 				<a href="mailto:vincent.heddesheimer@princeton.edu" aria-label="Email">
-					<i class="fas fa-envelope"></i>
 					<span class="link-label">Email</span>
 				</a>
 			</nav>
 		</aside>
 
-		<main class="content">
+		<main class="content" id="main-content">
 
-			<nav class="section-nav" aria-label="Page sections">
-				<a href="#job-market-paper">Job Market Paper</a>
-				<a href="#publications">Publications</a>
-				<a href="#working-papers">Working Papers</a>
-				<a href="#policy-contributions">Policy Contributions</a>
-				<a href="#datasets">Datasets</a>
-			</nav>
 
-			<p class="job-market">
-				<span class="jm-badge">Job Market</span>
-				<span>I am on the 2026&ndash;27 academic job market.
-					<a href="cv/VHeddesheimer_CV.pdf" target="_blank" rel="noopener">CV</a></span>
-			</p>
 
+			<div class="intro">
 			<p>I am a <a
 					href="https://gradschool.princeton.edu/financial-support/fellowships/princeton-fellowships/prize-fellowship-social-sciences"
 					target="_blank" rel="noopener">Prize Fellow in the Social Sciences</a> and a Ph.D. candidate in
@@ -80,27 +69,20 @@
 				down housing they would otherwise approve. More broadly, my dissertation argues that electoral
 				accountability can deter long-term investment whose political costs precede its benefits.</p>
 
-			<h2 id="job-market-paper">Job Market Paper</h2>
-			<p><b><a href="papers/Heddesheimer_JMP.pdf" target="_blank" rel="noopener">Electoral Risk and Housing
-						Supply</a></b>
-				<i><a href="papers/Heddesheimer_JMP.pdf" target="_blank" rel="noopener">[PDF]</a></i>
-				<button class="toggle-btn" data-target="housing" aria-expanded="false">[Abstract]</button>
-			</p>
-			<div id="housing" class="abstract" hidden>
-				<p>Why do local politicians restrict housing even when shortages are severe? New construction creates
-					immediate, concentrated political costs, while many benefits arrive later, are diffuse, and are
-					harder to attribute. I argue that electoral risk determines whether these costs deter politicians
-					from approving new housing. I combine administrative records from Germany and the United States with
-					an original survey of more than 5,200 local politicians. In Germany, a difference-in-differences
-					design shows that a sharp increase in electoral risk reduces housing supply, especially multifamily
-					construction. In US cities, municipal permitting rises under the same mayor once term limits remove
-					reelection pressure. The survey shows that voter opposition, fiscal costs, and planning burdens
-					deter projects, while many politicians who regard supply expansion as effective expect voters to
-					prefer other policies. Housing shows how electoral accountability can deter long-term investments
-					whose political costs precede their benefits.</p>
+			<p class="job-market">I am on the 2026&ndash;27 academic job market.
+				<span class="job-market-links"><a href="cv/VHeddesheimer_CV.pdf" target="_blank" rel="noopener">CV <span aria-hidden="true">&nearr;</span></a>
+				<a href="papers/Heddesheimer_JMP.pdf" target="_blank" rel="noopener" aria-label="Job market paper PDF">JMP <span aria-hidden="true">&nearr;</span></a></span></p>
 			</div>
 
-			<h2 id="publications">Publications</h2>
+			<nav class="section-nav" aria-label="Page sections">
+				<a id="tab-publications" href="#publications">Publications</a>
+				<a id="tab-working-papers" href="#working-papers">Working Papers</a>
+				<a id="tab-policy-contributions" href="#policy-contributions">Policy Contributions</a>
+				<a id="tab-datasets" href="#datasets">Datasets</a>
+			</nav>
+
+			<section class="section-panel" id="publications" aria-labelledby="heading-publications">
+				<h2 id="heading-publications">Publications</h2>
 			<ol reversed>
 
 				<li>
@@ -113,7 +95,7 @@
 						rel="noopener">Erik Voeten</a>). 2026. <i><b>American Political Science
 							Review</b></i>, 120(3): 853&ndash;875.
 
-					<button class="toggle-btn" data-target="energytransition" aria-expanded="false">[Abstract]</button>
+					<button type="button" class="toggle-btn" data-target="energytransition" aria-controls="energytransition" aria-expanded="false">[Abstract]</button>
 					<i><a href="https://politicalsciencenow.com/when-the-green-transition-climate-policy-fuels-backlash/"
 							target="_blank" rel="noopener">[APSA Blog]</a></i>
 					<div id="energytransition" class="abstract" hidden>
@@ -153,7 +135,7 @@
 						target="_blank" rel="noopener">Fiona Bare</a>). Early View, <b><i>American Journal of Political
 							Science</i></b>.
 
-					<button class="toggle-btn" data-target="climateexposure" aria-expanded="false">[Abstract]</button>
+					<button type="button" class="toggle-btn" data-target="climateexposure" aria-controls="climateexposure" aria-expanded="false">[Abstract]</button>
 					<i><a href="https://ajps.org/2026/05/11/climate-exposure-drives-firm-political-behavior-evidence-from-earnings-calls-and-lobbying-data/"
 							target="_blank" rel="noopener">[AJPS Blog]</a></i>
 					<div id="climateexposure" class="abstract" hidden>
@@ -189,7 +171,7 @@
 						rel="noopener">Florian Sichart</a>, and <a class="coauthor" href="https://www.abwiedemann.com/"
 						target="_blank" rel="noopener">Andreas Wiedemann</a>). 2025. <b><i>Nature: Scientific
 							Data</i></b>, 12: 618.
-					<button class="toggle-btn" data-target="gerdapaper" aria-expanded="false">[Abstract]</button>
+					<button type="button" class="toggle-btn" data-target="gerdapaper" aria-controls="gerdapaper" aria-expanded="false">[Abstract]</button>
 					<i><a href="http://www.german-elections.com/" target="_blank" rel="noopener">[Website]</a></i>
 					<i><a href="https://github.com/awiedem/german_election_data" target="_blank"
 							rel="noopener">[Data]</a></i>
@@ -223,9 +205,31 @@
 				</li>
 
 			</ol>
+			</section>
 
-			<h2 id="working-papers">Working Papers</h2>
+			<section class="section-panel" id="working-papers" aria-labelledby="heading-working-papers">
+				<h2 id="heading-working-papers">Working Papers</h2>
 			<ol start="1">
+
+				<li id="job-market-paper">
+					<b><a href="papers/Heddesheimer_JMP.pdf" target="_blank" rel="noopener">Electoral Risk and Housing Supply</a></b>
+					<em class="paper-note">Job market paper</em>
+					<i><a href="papers/Heddesheimer_JMP.pdf" target="_blank" rel="noopener">[PDF]</a></i>
+					<button type="button" class="toggle-btn" data-target="housing" aria-controls="housing" aria-expanded="false">[Abstract]</button>
+					<div id="housing" class="abstract" hidden>
+						<p>Why do local politicians restrict housing even when shortages are severe? New construction creates
+							immediate, concentrated political costs, while many benefits arrive later, are diffuse, and are
+							harder to attribute. I argue that electoral risk determines whether these costs deter politicians
+							from approving new housing. I combine administrative records from Germany and the United States with
+							an original survey of more than 5,200 local politicians. In Germany, a difference-in-differences
+							design shows that a sharp increase in electoral risk reduces housing supply, especially multifamily
+							construction. In US cities, municipal permitting rises under the same mayor once term limits remove
+							reelection pressure. The survey shows that voter opposition, fiscal costs, and planning burdens
+							deter projects, while many politicians who regard supply expansion as effective expect voters to
+							prefer other policies. Housing shows how electoral accountability can deter long-term investments
+							whose political costs precede their benefits.</p>
+					</div>
+				</li>
 
 				<li>
 					<b><a href="https://osf.io/preprints/socarxiv/6h8cq" target="_blank" rel="noopener">Place-Based
@@ -236,7 +240,7 @@
 						Hilbig</a> and <a class="coauthor" href="https://www.abwiedemann.com/" target="_blank"
 						rel="noopener">Andreas Wiedemann</a>).
 
-					<button class="toggle-btn" data-target="grw" aria-expanded="false">[Abstract]</button>
+					<button type="button" class="toggle-btn" data-target="grw" aria-controls="grw" aria-expanded="false">[Abstract]</button>
 					<div id="grw" class="abstract" hidden>
 						<p>Many governments use place-based policies to support economically lagging regions, yet these
 							programs are vulnerable to retrenchment. This paper examines how local governments respond
@@ -261,7 +265,7 @@
 						rel="noopener">Rafaela Dancygier</a> and <a class="coauthor" href="https://www.abwiedemann.com/"
 						target="_blank" rel="noopener">Andreas Wiedemann</a>).
 
-					<button class="toggle-btn" data-target="financialization" aria-expanded="false">[Abstract]</button>
+					<button type="button" class="toggle-btn" data-target="financialization" aria-controls="financialization" aria-expanded="false">[Abstract]</button>
 					<div id="financialization" class="abstract" hidden>
 						<p>This paper examines the rise of housing populism: narratives casting financial investors as
 							predatory and policies demanding investor bans. We argue that housing populism is
@@ -285,7 +289,7 @@
 					(with <a class="coauthor" href="https://www.hannohilbig.com/" target="_blank" rel="noopener">Hanno
 						Hilbig</a>).
 
-					<button class="toggle-btn" data-target="recession" aria-expanded="false">[Abstract]</button>
+					<button type="button" class="toggle-btn" data-target="recession" aria-controls="recession" aria-expanded="false">[Abstract]</button>
 					<div id="recession" class="abstract" hidden>
 						<p>What are the long-run political consequences of economic crises? We study the Great Recession
 							in the
@@ -322,7 +326,7 @@
 						href="https://bobst.princeton.edu/people/ahra-wu" target="_blank" rel="noopener">Ahra Wu</a>).
 					(draft available upon request)
 
-					<button class="toggle-btn" data-target="immigration_speeches"
+					<button type="button" class="toggle-btn" data-target="immigration_speeches" aria-controls="immigration_speeches"
 						aria-expanded="false">[Abstract]</button>
 					<div id="immigration_speeches" class="abstract" hidden>
 						<p>We present the first large-scale transatlantic comparison of immigration rhetoric among
@@ -344,7 +348,7 @@
 						Hilbig</a> and <a class="coauthor" href="https://marchvidkjaer.com/" target="_blank"
 						rel="noopener">Marc Sabatier Hvidkjær</a>). (draft available upon request)
 
-					<button class="toggle-btn" data-target="reindustrialization"
+					<button type="button" class="toggle-btn" data-target="reindustrialization" aria-controls="reindustrialization"
 						aria-expanded="false">[Abstract]</button>
 					<div id="reindustrialization" class="abstract" hidden>
 						<p>Can reindustrialization reverse the political consequences of industrial decline? We study
@@ -364,8 +368,10 @@
 				</li>
 
 			</ol>
+			</section>
 
-			<h2 id="policy-contributions">Policy Contributions</h2>
+			<section class="section-panel" id="policy-contributions" aria-labelledby="heading-policy-contributions">
+				<h2 id="heading-policy-contributions">Policy Contributions</h2>
 			<ol start="1">
 				<li>
 					<b><a href="https://www.bertelsmann-stiftung.de/en/publications/publication/did/can-regional-policy-stabilize-structural-transformation"
@@ -397,8 +403,10 @@
 							target="_blank" rel="noopener">Social Europe</a>]</span>
 				</li>
 			</ol>
+			</section>
 
-			<h2 id="datasets">Datasets</h2>
+			<section class="section-panel" id="datasets" aria-labelledby="heading-datasets">
+				<h2 id="heading-datasets">Datasets</h2>
 			<ul class="datasets">
 				<li>
 					<b><a href="http://www.german-elections.com/" target="_blank" rel="noopener">GERDA — the German
@@ -424,6 +432,8 @@
 							target="_blank" rel="noopener">Der Spiegel</a>]</span>
 				</li>
 			</ul>
+			</section>
+
 
 		</main>
 	</div>
